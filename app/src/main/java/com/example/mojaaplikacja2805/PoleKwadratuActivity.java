@@ -43,7 +43,7 @@ public class PoleKwadratuActivity extends AppCompatActivity {
             if (!((bokKwadratu.getText().toString()).equals(""))){
                 double bokKwadratuInt = Double.parseDouble(bokKwadratu.getText().toString());
                 double wynikPolaKwadratuInt = obliczPoleKwadratu(bokKwadratuInt);
-                bokKwadratu.setText("A teraz sprawdzam czy działa Github3 ");
+                bokKwadratu.setText("A teraz sprawdzam czy działa Github4 ");
                 wynikPolaKwadratuText.setVisibility(View.VISIBLE);
                 wynikPolaKwadratuText.setText("Pole kwadratu o długości boku " + (Double.toString(bokKwadratuInt)) + " to: " + (Double.toString(wynikPolaKwadratuInt)));
             }
