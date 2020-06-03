@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/glownaTablea"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tabela"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TableRow
+            android:id="@+id/wiersz1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <TextView
+                android:id="@+id/textView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Wybierz figurę geometryczną"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/wiersz2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewKolo"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                app:srcCompat="@drawable/kolo" />
+
+            <TextView
+                android:id="@+id/textViewKolo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Koło"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/wiersz3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageViewKwdarta"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="kwadratKlikniecie"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                app:srcCompat="@drawable/kwadrat" />
+
+            <TextView
+                android:id="@+id/textViewKwadrat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:onClick="kwadratTekstKliknięcie"
+                android:text="Kwadrat"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/wiersz4"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewRomb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                app:srcCompat="@drawable/romb" />
+
+            <TextView
+                android:id="@+id/textViewRomb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Romb"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/wiersz5"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewProstokat"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                app:srcCompat="@drawable/prostokat" />
+
+            <TextView
+                android:id="@+id/textViewProstokat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Prostokąt"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/wiersz6"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/imageViewTrojkat"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:paddingTop="5dip"
+                android:paddingBottom="5dip"
+                app:srcCompat="@drawable/trojkat" />
+
+            <TextView
+                android:id="@+id/textViewTrojkat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Trójkąt"
+                android:textColor="@android:color/background_light"
+                android:textSize="18sp" />
+        </TableRow>
+    </TableLayout>
+</LinearLayout>
